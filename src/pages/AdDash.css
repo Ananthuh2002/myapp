@@ -1,0 +1,7 @@
+ .main-class{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: #000; */
+ }  

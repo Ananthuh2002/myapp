@@ -1,0 +1,151 @@
+
+.text-box{
+     border: 5px solid rgb(6, 195, 220);
+     margin-top: 60px;
+}
+ .content{
+      background-color: rgb(26, 180, 126);
+      display:flex ;
+      justify-content:space-around;
+      align-items: center;
+      height: 20vh;
+      gap: 10rem;
+      /* margin-bottom: 2rem; */
+      width: 100%;
+      /* margin-left:30px ; */
+    
+    }
+
+
+.type{
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+      position: relative;
+      top: 50px;
+       
+  
+}
+
+.text-main{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+   
+}
+.buttons{
+
+  width: 100%;
+  display: flex;
+  justify-content:right;
+  position: relative;
+  right: 25rem;
+}
+/* .sub-button{
+  background: #000;
+  position: relative;
+  right: 25rem;
+  
+} */
+#btn1{
+  background-color: #008CBA; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+
+input[type=text], select {
+  width: 80%;
+  padding: 12px 2px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(95, 12, 12);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#btn2{
+  background-color: #de2b0c; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-left: 2rem;
+}
+
+
+span{
+  color: red;
+  position: relative;
+  right: 20px;
+}
+
+
+
+@media (max-width:1000px){
+.date{
+   margin-left: 5rem;
+}
+
+
+}
+
+
+
+
+@media (max-width:850px){
+.text-box{
+   margin-left: 2rem;
+   width: 80%;
+ 
+}
+}
+
+@media (max-width:760px){
+  #fname{
+   position: relative;
+   left: 3rem;
+  
+ 
+  }
+}
+@media (max-width:680px){
+ .toTime{
+ position: relative;
+   left: 3px; 
+
+ }
+
+.content{
+  display: flex;
+  flex-direction:column ;
+  justify-content: center;
+  align-items: center;
+  gap:7px
+}
+.type{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.radio{
+
+  position: relative;
+  left: 20px;
+
+}
+  } 
+
+
+

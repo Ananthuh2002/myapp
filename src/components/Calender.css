@@ -1,0 +1,14 @@
+@import url("https://cdn.syncfusion.com/ej2/material.css");
+
+.center{
+display: flex;
+justify-content: center;
+}
+.class{
+    margin-top: 50px;
+    padding-top:50px; 
+    height: 80vh;
+
+   
+};
+

@@ -1,0 +1,39 @@
+/* .finish{
+  border: 2px solid rgb(0, 0, 0);
+  position: relative;
+    top: 6rem;
+   height: auto;
+   width: 80%;
+   padding: 10px;
+   margin-left: 5rem;
+  margin-top:20px ;
+
+ 
+} */
+table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+
+th {
+  background-color: #4287f5;
+  color: white;
+}
+
+th,
+td {
+  width: 150px;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+h2 {
+  color: #4287f5;
+}
+
+.tables{
+  display: flex;
+  justify-content: center;
+}
+

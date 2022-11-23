@@ -1,0 +1,20 @@
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+}
+input[type=search], select {
+    width: 20%;
+    padding: 12px 2px;
+    margin: 8px 30px;
+    display: inline-block;
+    border: 1px solid rgb(181, 21, 21);
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
