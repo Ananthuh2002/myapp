@@ -38,7 +38,7 @@ const Aslist = ({getdata}) => {
        const sett=school;
       console.log(fname);
 
-       Axios.post('http://localhost:7000/api/insert/selist',{name:fname,email:mail,set:sett})
+       Axios.post('http://localhost:7000/api/insert/selist',{name:name,email:mail,set:sett})
     
       })}
 
@@ -50,23 +50,12 @@ const Aslist = ({getdata}) => {
 
   return (
     <>
- {/* {sin.map((
-  {
-    // const Am:fname
-      fname,Email,school
-  }
- )=>{
-  
-   const Am=fname;
-   setSi(Am)
 
-  })} */}
     
     
 
 <div className="sub">
 <h2>SELECT REPORTING PERSON:</h2>
-{/* <form></form> */}
 <div className="tables">
 <table>
   <thead>{}

@@ -6,13 +6,15 @@
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 80%;
+    width: 100%;
+
 
   }
 
   td, th {
     border: 1px solid #dddddd;
     text-align: center;
+  
     padding: 10px;
   }
   
@@ -23,7 +25,7 @@ table {
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
@@ -36,11 +38,29 @@ table {
     background-color: #764a37; /* Green */
     border: none;
     color: white;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 12px;
+}
+/* .tb1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+} */
+#bt3{
+  background-color: #764a37; /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
 }

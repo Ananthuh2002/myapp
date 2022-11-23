@@ -8,6 +8,7 @@ import Adpop1 from '../components/Adpop1';
 const Team = () => {
   const [tpop,setTPop]=useState(false);
   const [assi,setAssi]=useState(false);
+  const [task,setTask]=useState(false);
 
 
   return (
@@ -30,13 +31,19 @@ const Team = () => {
     <td>1011</td>
     <td>Mr.jenny</td>
     <td><button id='bt1'onClick={()=>setTPop(true)}>VIEW</button></td>
-    <Adpop1 trigger={tpop} setTrigger={setTPop}>
+    <Adpop trigger={tpop} setTrigger={setTPop}>
      <Viewteam/>
- </Adpop1>
-    <td><button id='bt2'onClick={()=>setAssi(true)}>ASSIGN</button></td>
+ </Adpop>
+    <td><button id='bt2'onClick={()=>setAssi(true)}>ASSIGN</button> <button id='bt3'onClick={()=>setTask(true)}>ADD TASK</button></td>
     <Adpop trigger={assi} setTrigger={setAssi}>
        <Aslist/>
  </Adpop>
+ <Adpop trigger={task} setTrigger={setTask}>
+   
+ </Adpop>
+
+
+
   </tr>
   <tr>
     <td>1012</td>
