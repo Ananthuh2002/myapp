@@ -4,6 +4,7 @@ import {useForm} from "react-hook-form";
 import Axios from 'axios';
 import Details from '../pages/Details';
 // import Table from 'react-bootstrap/Table';
+import swal from 'sweetalert';
 
 
 const Form = () => {
@@ -34,14 +35,24 @@ useEffect(()=>{
 
     setDis([...dis,{title:title,find:date,Totime:toTime,Fromtime:Time,Type:radio,Description:des},
     ])
-          alert("Report Added Sucessfully")
+    swal({
+      title: "DATA ADDED SUCCESSFULLY",
+      icon: "success",
+      button: "OK!",
+    });
      
     }
 
     const deleteitem=(title)=>{
       Axios.delete(`http://localhost:7000/api/delete/${title}`)
 
-      alert("Deleted sucessfully... please reload the page!!!!")
+      swal({
+        title: "DELETED SUCCESSFULLY",
+        text: "PLEASE REFRESH THE PAGE!",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      })
     }
  
 // const update=(title)=>{
@@ -120,7 +131,7 @@ useEffect(()=>{
           </div>        
              <div className='text-main'>
               <div className="text">
-            <textarea  onChange={(e)=>setDes(e.target.value)}  rows="10" cols="100" className='text-box' required />    
+            <textarea  onChange={(e)=>setDes(e.target.value)}  rows="10" cols="100" className='text-box' required></textarea>    
             </div>        
             </div> 
           <div className="buttons">

@@ -14,6 +14,8 @@ import Admin from './pages/Admin';
 import AdDash from './pages/AdDash';
 import Team from './pages/Team';
 import AdReport from './pages/AdReport';
+import Task from './pages/Task';
+
 
 
 
@@ -34,6 +36,7 @@ function App() {
       <Route path='report' element={<Report/>}/>
       <Route path='Status' element={<Status/>}/>
     <Route path='Details' element={<Details/>}/>  
+    <Route path='task' element={<Task/>}/>  
      </Route>
 
 

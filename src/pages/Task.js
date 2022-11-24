@@ -1,8 +1,12 @@
 import React from 'react'
+import Usertask from './Usertask'
+import './Task.css'
 
 const Task = () => {
   return (
-    <di></div>
+   <>
+   <div className='class1'><Usertask/></div>
+   </>
   )
 }
 

@@ -61,6 +61,7 @@ const Aslist = ({getdata}) => {
   <thead>{}
   <tr>
     <th>Name</th>
+    <th>Action</th>
 
   </tr>
   </thead>

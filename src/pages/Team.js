@@ -5,6 +5,7 @@ import Assign from '../components/Assign';
 import Aslist from '../components/Aslist';
 import Viewteam from './Viewteam';
 import Adpop1 from '../components/Adpop1';
+import Task from './Task';
 const Team = () => {
   const [tpop,setTPop]=useState(false);
   const [assi,setAssi]=useState(false);
@@ -39,7 +40,7 @@ const Team = () => {
        <Aslist/>
  </Adpop>
  <Adpop trigger={task} setTrigger={setTask}>
-   
+   <Task/>
  </Adpop>
 
 
