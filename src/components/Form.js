@@ -23,10 +23,13 @@ useEffect(()=>{
     setDis(response.data)
 
   })
+  
+  // setTimeout(() => 
+  //   setDis(),500);
 },[])
 
-    const onsub=(e)=>{
-      e.preventDefault();
+    const onsub=()=>{
+  
     
     Axios.post('http://localhost:7000/api/insert',{title:title,find:date,Totime:toTime,Fromtime:Time,Type:radio,Description:des})
     // .then(()=>{
@@ -40,6 +43,7 @@ useEffect(()=>{
       icon: "success",
       button: "OK!",
     });
+
      
     }
 
@@ -53,6 +57,9 @@ useEffect(()=>{
         buttons: true,
         dangerMode: true,
       })
+
+ 
+
     }
  
 // const update=(title)=>{

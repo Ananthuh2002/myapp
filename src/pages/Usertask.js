@@ -8,8 +8,11 @@ import swal from 'sweetalert';
 
 
 const Usertask = () => {
-  const[task,setTask]=useState("")
-  const[display,setDisplay]=useState([])
+  const[task,setTask]=useState("");
+  const[ne,setNe]=useState("");
+
+  const[display,setDisplay]=useState([]);
+
 
   useEffect(()=>{
     Axios.get('http://localhost:7000/api/list/task').then((response)=>{
@@ -30,13 +33,34 @@ const Usertask = () => {
       dangerMode: true,
     })
 
-  
-  }
+ }
+ const updateitem=(Taskname)=>{
 
+  Axios.patch('http://localhost:7000/api/taskupdate',{Taskname:Taskname,status:ne}).then((response)=>{
+  //  response.send("finisg")
+
+  
+})
+if(ne==null){
+swal({
+    title: "UPDATED SUCCESSFULLY",
+    text: "PLEASE REFRESH THE PAGE!",
+    icon: "success",
+    button: "OK!",
+  });
+ }
+ else{
+  swal({
+    title: "ENTER THE VALUE",
+    icon: "info",
+    button: "OK!",
+  });
+ }
+}
 
   return (
 <div className='task'>
-
+<form>
  <div className="tables">
 <table>
   <thead>{}
@@ -44,7 +68,8 @@ const Usertask = () => {
     <th>Task Name</th>
     <th>Category</th> 
     <th>Priority</th>
-    <th>Action</th>
+    <th>Status</th> 
+     <th>Action</th>
   </tr>
   </thead>
   <tbody>
@@ -54,7 +79,11 @@ const Usertask = () => {
     <td>{obj.Taskname}</td>
     <td>{obj.category}</td>
     <td>{obj.priority}</td>
+    <td>{obj.status}</td>
+   
     <td>  <button onClick={()=>{deleteitems(obj.Taskname)}}>Delete</button></td>
+   <td>  <button onClick={()=>{updateitem(obj.Taskname)}}>Update ststus</button></td>
+   <td> <input type="number" placeholder="Your name.."  onChange={(e)=>setNe(e.target.value)} required/> </td>
     {/* <td>   <input type="text" id='upinput'  onChange={(e)=>setup(e.target.value)}/></td>
     <td>   <button onClick={()=>{update(obj.title)}}>Update</button></td> */}
 
@@ -63,6 +92,7 @@ const Usertask = () => {
   </tbody>
  </table>
 </div>
+</form>
 <div className='add'>
 <button onClick={()=>setTask(true)}>Add Task</button>
 <Adpop1 trigger={task} setTrigger={setTask}>

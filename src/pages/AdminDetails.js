@@ -13,14 +13,22 @@ export const AdminDetails=[
         cName:'nav-text'
     },
     {
-        title:'Team Member',
+        title:'Staff List',
         path:'Team',
         icon:<AiIcons.AiFillFlag/>,
         cName:'nav-text'
     },
     {
-        title:'Report Details',
+        title:'Reporting staff',
         path:'AdReport',
         icon:<AiIcons.AiFillHome/>,
         cName:'nav-text'
-    }]
+    },
+    {
+       title:'Task List',
+       path:'Adtask',
+       icon:<AiIcons.AiFillHome/>,
+       cName:'nav-text'
+
+    }
+]

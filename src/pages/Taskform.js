@@ -9,13 +9,15 @@ const Taskform = () => {
     const [end,setEnd]=useState("")
     const [pri,setPri]=useState("")
     const [des,setDes]=useState("")
+    const [count,setCount]=useState("")
    
 
 
 
 
 const onsubbmit=()=>{
-  Axios.post('http://localhost:7000/api/insert/tasklist',{name:name,cate:cate,start:start,end:end,pri:pri,des:des})
+  // e.preventDefault();
+  Axios.post('http://localhost:7000/api/insert/tasklist',{name:name,cate:cate,start:start,end:end,pri:pri,des:des,count:count})
 
     //  swal({
     //   title: "DATA ADDED SUCCESSFULLY",
@@ -51,6 +53,9 @@ const onsubbmit=()=>{
     <label for="lname">Task Details</label>
   <textarea  placeholder="Task Deatails"  onChange={(e)=>setDes(e.target.value)}>
 </textarea>
+
+<label for="lname">Status</label>
+    <input type="number" id="lname" name="number" placeholder="Enter the status" min="0" step="0"  onChange={(e)=>setCount(e.target.value)}/>
 
 
   
