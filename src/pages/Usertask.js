@@ -41,18 +41,18 @@ const Usertask = () => {
 
   
 })
-if(ne==null){
-swal({
-    title: "UPDATED SUCCESSFULLY",
-    text: "PLEASE REFRESH THE PAGE!",
-    icon: "success",
+if(!ne){
+  swal({
+    title: "ENTER THE VALUE",
+    icon: "info",
     button: "OK!",
   });
  }
  else{
   swal({
-    title: "ENTER THE VALUE",
-    icon: "info",
+    title: "UPDATED SUCCESSFULLY",
+    text: "PLEASE REFRESH THE PAGE!",
+    icon: "success",
     button: "OK!",
   });
  }

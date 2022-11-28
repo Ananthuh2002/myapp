@@ -7,7 +7,7 @@ const Popup = (props) => {
      {props.children}
      <button className='close-btn'onClick={()=>props.setTrigger(false)}>close</button>
      <div className='btn'>
-     <button className='close-btn2'>Not approved</button>
+  
      </div>
         </div>
       

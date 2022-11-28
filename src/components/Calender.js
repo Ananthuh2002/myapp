@@ -5,7 +5,7 @@ import {CalendarComponent} from '@syncfusion/ej2-react-calendars';
 const Calender = () => {
   return (
         <div className='center'>
-            <CalendarComponent className='class'></CalendarComponent>
+            {/* <CalendarComponent className='class'></CalendarComponent> */}
             </div>
       )
     }

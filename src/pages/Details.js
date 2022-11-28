@@ -49,6 +49,9 @@ const Details=()=> {
         <td><button onClick={()=>setPop(true)}>view</button></td>
         <Popup trigger={pop} setTrigger={setPop}>
       {obj.Description}
+      <div>
+        <button>{obj.status}</button>
+      </div>
  </Popup>
 
     

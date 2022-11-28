@@ -36,6 +36,7 @@ export const SidebarData=[
         path:'task',
         icon:<AiIcons.AiFillHome/>,
         cName:'nav-text'
-    }
+    },
+
     
 ]

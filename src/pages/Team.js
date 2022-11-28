@@ -35,13 +35,11 @@ const Team = () => {
     <Adpop trigger={tpop} setTrigger={setTPop}>
      <Viewteam/>
  </Adpop>
-    <td><button id='bt2'onClick={()=>setAssi(true)}>ASSIGN</button> <button id='bt3'onClick={()=>setTask(true)}>ADD TASK</button></td>
+    <td><button id='bt2'onClick={()=>setAssi(true)}>ASSIGN</button> </td>
     <Adpop trigger={assi} setTrigger={setAssi}>
        <Aslist/>
  </Adpop>
- <Adpop trigger={task} setTrigger={setTask}>
-   <Task/>
- </Adpop>
+
 
 
 

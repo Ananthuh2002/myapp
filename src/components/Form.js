@@ -15,7 +15,7 @@ const Form = () => {
     const [title,setTitle]=useState("")
     const [radio,setradio]=useState("")
     const[dis,setDis]=useState([])
-    const[up,setup]=useState("")
+    const[up,setUp]=useState("")
 
 useEffect(()=>{
   Axios.get('http://localhost:7000/api/get').then((response)=>{
@@ -31,7 +31,7 @@ useEffect(()=>{
     const onsub=()=>{
   
     
-    Axios.post('http://localhost:7000/api/insert',{title:title,find:date,Totime:toTime,Fromtime:Time,Type:radio,Description:des})
+    Axios.post('http://localhost:7000/api/insert',{title:title,find:date,Totime:toTime,Fromtime:Time,Type:radio,Description:des,up:up})
     // .then(()=>{
     //   alert("sucess")
     // })
@@ -61,43 +61,6 @@ useEffect(()=>{
  
 
     }
- 
-// const update=(title)=>{
-//   Axios.put("http://localhost:7000/api/put/",{
-//     title:title,
-//     find:up
-//   })
-//   setup=("")
-// }
-
-
-
-  //   let data={date,des,Time,toTime,title,radio}
-  //   data.id=Date.now();
-  //  getData(data)
-
-
-
-
-
-
-    // useEffect(()=> {
-    //   const forms=JSON.parse(localStorage.getItem("user"))
-    // getData(forms)
-    //  })
-
-
-    //  useEffect((getData)=>{
-    //  localStorage.setItem("user",JSON.stringify(getData))
-    //  },[])
-//  const handle=()=>{
-//   setCancel("");
-//  }
-
-
-
-
-
   return (
     <>
  
@@ -123,11 +86,8 @@ useEffect(()=>{
             <div className="title">
               <label id="fname">Work Report Title:</label>
             <input type="text" id="fname" name="firstname" onChange={(e)=>setTitle(e.target.value)} required/>
-            </div> 
-            {/* <div className='status'>
-              Staus:
-            <input type="text" value="pending" autofocus/>
-              </div> */}
+             </div> 
+     
             <div className="radio">
             <span> Work Type:</span> 
            <input type="radio" id="official" name="fav_language" value="official" onChange={(e)=>setradio(e.target.value)} required/>
@@ -142,7 +102,7 @@ useEffect(()=>{
             </div>        
             </div> 
           <div className="buttons">
-           <button id='btn1'>Save</button>
+           <button id='btn1' value="pending" onClick={(e)=>setUp(e.target.value)}>Save</button>
             
            <button id='btn2' type='reset'>Cancel</button>
      

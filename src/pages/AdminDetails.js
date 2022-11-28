@@ -30,5 +30,13 @@ export const AdminDetails=[
        icon:<AiIcons.AiFillHome/>,
        cName:'nav-text'
 
-    }
+    },
+
+    {
+        title:'Report List',
+        path:'Adrlist',
+        icon:<AiIcons.AiFillHome/>,
+        cName:'nav-text'
+ 
+     }
 ]

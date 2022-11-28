@@ -17,7 +17,7 @@ import AdReport from './pages/AdReport';
 import Task from './pages/Task';
 import Taskform from './pages/Taskform';
 import Tasklist from './pages/Tasklist';
-
+import Adrlist from './pages/Adrlist'
 
 
 
@@ -39,6 +39,7 @@ function App() {
       <Route path='Status' element={<Status/>}/>
     <Route path='Details' element={<Details/>}/>  
     <Route path='task' element={<Task/>}/>  
+    {/* <Route path='/User' element={<User/>}/>   */}
    
      </Route>
 
@@ -48,6 +49,7 @@ function App() {
      <Route  path='Team' element={<Team/>}/>
      <Route  path='AdReport' element={<AdReport/>}/>
      <Route  path='Adtask' element={<Tasklist/>}/>
+     <Route  path='Adrlist' element={<Adrlist/>}/>
      
    </Route>
  

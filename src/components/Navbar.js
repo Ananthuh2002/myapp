@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import * as FaIcons from "react-icons/fa";
 import * as BsIcons from "react-icons/bs";
-import {Link} from "react-router-dom";
+import {Link, Router,Routes,Route} from "react-router-dom";
 import {SidebarData} from './SidebarData'
 import './Navbar.css'
+import First from '../pages/First';
+import Links from '../pages/Link';
 
 
 function Navbar(props) {
@@ -11,6 +13,9 @@ function Navbar(props) {
     const [sidebar,setSidebar]=useState(false)
 
     const showSidebar=()=>setSidebar(!sidebar)
+    function logout(){
+  <Link to="/"></Link>
+    }
   return (
     <>
     <div className="navbar">
@@ -19,7 +24,12 @@ function Navbar(props) {
 
         </Link>
         <h4>{props.title}</h4>
-    </div>
+        <Link to ="/" className="menu-bar">
+            <FaIcons.FaUser />
+
+        </Link>
+        {/* <FontAwesomeIcon ic="fa-solid fa-user" /> */}
+        </div>
     <nav className={sidebar ? 'nav-menu active': 'nav-menu'}>
         <ul className='nav-menu-items'onClick={sidebar}>
             {/* <li className='navbar-toggle'>
